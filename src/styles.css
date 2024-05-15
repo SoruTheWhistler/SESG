@@ -1,5 +1,5 @@
 :root {
-  --form-bar-height: 8.4rem;
+  --formbar-height: 8.4rem;
   --dark-gray: #282C34;
   --white: #DEFFFC;
 
@@ -25,6 +25,7 @@
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
   font-size: 62.5%;
   scroll-behavior: smooth;
