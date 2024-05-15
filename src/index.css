@@ -1,0 +1,36 @@
+:root {
+  --form-bar-height: 8.4rem;
+  --dark-gray: #282C34;
+  --white: #DEFFFC;
+
+  --shadow: #00000033;
+
+  --orange: #D1603D;
+  --gold: #DDB967;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: "Montserrat", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
