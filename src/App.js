@@ -101,7 +101,7 @@ const App = () => {
               onClick={() => setDisplayFormbar(!displayFormbar)}
               title="Toggles formbar visibility"
             >
-              <img id="menu-arrow" src={menuArrow} alt="V"/>
+              <img id="menu-arrow" src={menuArrow} alt="V" />
             </button>
           </div>
         </form>
