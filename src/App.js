@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { generateExponentialValues } from './utils/generateExponentialValues.js';
 import { randomBetween } from './utils/randomBetween.js';
-import './Home.css';
+import './App.css';
 import menuArrow from "./img/menu_arrow.png";
 
 const App = () => {
@@ -71,13 +71,13 @@ const App = () => {
                 id="random-btn"
                 className="icon-btn active"
                 onClick={randomizeValues}
-                title="Generates random numbers for the start and end values\n(Not recommended if you have a lot of iterations)"
+                title="Generate random numbers for the start and end values"
               >🎲</button>
               <button
                 id="round-ten-btn"
                 className={"icon-btn" + (roundTen ? " active" : "")}
                 onClick={() => setRoundTen(!roundTen)}
-                title="Whether to round the last value to the nearest multiple of 10"
+                title="Round each value to the nearest multiple of 10"
               >🔟</button>
               <button
                 id="auto-update-btn"
@@ -101,7 +101,7 @@ const App = () => {
               onClick={() => setDisplayFormbar(!displayFormbar)}
               title="Toggles formbar visibility"
             >
-              <img id="menu-arrow" src={menuArrow} />
+              <img id="menu-arrow" src={menuArrow} alt="V"/>
             </button>
           </div>
         </form>
@@ -116,6 +116,9 @@ const App = () => {
           ))}
         </ul>
       </main>
+      <footer>
+        <p>Made with 💜 by <a href="https://github.com/SoruTheWhistler">SoruTheWhistler</a> © {new Date().getFullYear()}</p>
+      </footer>
     </>
   )
 }

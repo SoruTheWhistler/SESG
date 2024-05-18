@@ -9,7 +9,8 @@
         "ignore": [
           "scroll-behavior",
           "text-size-adjust",
-          "accent-color"
+          "accent-color",
+          "height: fit-content"
         ]
       }
     ]
