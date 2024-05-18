@@ -51,7 +51,7 @@ const App = () => {
 
   return (
     <>
-      <section id="formbar" className={displayFormbar ? "visible" : "folded"}>
+      <header id="formbar" className={displayFormbar ? "visible" : "folded"}>
         <form id="sesg-form" onSubmit={handleSubmit}>
           <div className={"input-col" + (displayFormbar ? "" : " hidden")} title="The starting value of the series">
             <label htmlFor="start">Start</label>
@@ -105,7 +105,7 @@ const App = () => {
             </button>
           </div>
         </form>
-      </section>
+      </header>
       <main>
         <ul>
           {values && values.map((value, i) => (
@@ -117,7 +117,7 @@ const App = () => {
         </ul>
       </main>
       <footer>
-        <p>Made with 💜 by <a href="https://github.com/SoruTheWhistler">SoruTheWhistler</a> © {new Date().getFullYear()}</p>
+        <p>{new Date().getFullYear()} © Made with 💜 by <a href="https://github.com/SoruTheWhistler">SoruTheWhistler</a></p>
       </footer>
     </>
   )

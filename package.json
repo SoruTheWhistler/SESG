@@ -1,8 +1,8 @@
 {
-  "name": "expon",
+  "name": "sesg",
   "version": "1.0.0",
   "homepage": "https://soruthewhistler.github.io/sesg",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
