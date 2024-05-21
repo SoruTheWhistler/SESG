@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { generateExponentialValues } from './utils/generateExponentialValues.js';
 import { randomBetween } from './utils/randomBetween.js';
-import './App.css';
+import './App.scss';
 import menuArrow from "./img/menu_arrow.png";
 
 const App = () => {
@@ -53,19 +53,19 @@ const App = () => {
     <>
       <header id="formbar" className={displayFormbar ? "visible" : "folded"}>
         <form id="sesg-form" onSubmit={handleSubmit}>
-          <div className={"input-col" + (displayFormbar ? "" : " hidden")} title="The starting value of the series">
+          <div className="input-col" title="The starting value of the series">
             <label htmlFor="start">Start</label>
             <input type="number" name="start" placeholder="10" min="1" defaultValue={startValue} onChange={e => setStartValue(parseInt(e.target.value))} />
           </div>
-          <div className={"input-col" + (displayFormbar ? "" : " hidden")} title="The ending value of the series">
+          <div className="input-col" title="The ending value of the series">
             <label htmlFor="end">End</label>
             <input type="number" name="end" placeholder="20000" min="1" defaultValue={endValue} onChange={e => setEndValue(parseInt(e.target.value))} />
           </div>
-          <div className={"input-col" + (displayFormbar ? "" : " hidden")} title="The number of values to generate">
+          <div className="input-col" title="The number of values to generate">
             <label htmlFor="iterations">Iterations</label>
             <input type="number" name="iterations" placeholder="10" min="2" defaultValue={iterations} onChange={e => setIterations(parseInt(e.target.value))} />
           </div>
-          <div className={"input-col" + (displayFormbar ? "" : " hidden")}>
+          <div className="input-col">
             <div className="btn-row">
               <button
                 id="random-btn"
